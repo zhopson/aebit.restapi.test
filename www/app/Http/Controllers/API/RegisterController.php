@@ -17,8 +17,8 @@ class RegisterController extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
-//    private $minutes = 7*24*60;// 7 суток
-    private $minutes = 10;// 7 суток
+    private $minutes = 7*24*60;// 7 суток
+//    private $minutes = 10;// 7 суток
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
